@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_app_navigation"
+    app:startDestination="@id/resultFragment">
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.bishwajeet.gifsearch.ui.fragments.result.ResultFragment"
+        android:label="@string/gif_detail"
+        tools:layout="@layout/layout_search_result_detail">
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>
